@@ -8,6 +8,8 @@
     "store:allow-load",
     "store:allow-save",
     "store:allow-set",
-    "store:allow-get"
+    "store:allow-get",
+    "dialog:allow-save",
+    "fs:allow-write-text-file"
   ]
 }
