@@ -79,7 +79,7 @@ export default function App() {
             <NavItem to="/" icon="✓" label="Tasks" />
             <NavItem to="/notes" icon="✎" label="Notes" />
             <NavItem to="/pomodoro" icon="◎" label="Pomodoro" />
-            <NavItem to="/flashcards" icon="🃏" label="Flashcards" />
+            <NavItem to="/flashcards" icon="🂡" label="Flashcards" />
 
             <div className="mt-auto flex items-center gap-2 px-2 pb-1">
               <span className="text-[11px] whitespace-nowrap" style={{ color: 'var(--text-tertiary)' }}>
@@ -91,7 +91,7 @@ export default function App() {
                 style={{ background: dark ? '#34c759' : '#d1d1d6' }}
               >
                 <span
-                  className="absolute top-0.5 w-3.5 h-3.5 bg-white rounded-full shadow-sm transition-transform duration-200"
+                  className="absolute top-0.5 left-[1px] w-3.5 h-3.5 bg-white rounded-full shadow-sm transition-transform duration-200"
                   style={{ transform: dark ? 'translateX(14px)' : 'translateX(2px)' }}
                 />
               </button>
