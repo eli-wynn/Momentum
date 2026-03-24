@@ -29,7 +29,7 @@ export type FlashcardStore = {
     loadCards: () => Promise<void>
     addCard: (front: string, back: string, deckId: number) => Promise<number>
     deleteCard: (deckId: number, cardId: number) => Promise<void>
-    editCard: (deckId: number, front: string, back: string, cardId: number) => Promise<void>
+    editCard: (deckId: number, cardId: number, front: string, back: string) => Promise<void> 
     editDeck: (deckId: number, title: string) => Promise<void>
 }
 

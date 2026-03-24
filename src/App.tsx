@@ -4,7 +4,7 @@ import Tasks from './components/tasks/TaskList'
 import Notes from './components/notes/Notes'
 import Pomodoro from './components/pomodoro/Pomodoro'
 import Flashcards from './components/flashcards/Flashcards'
-import Calculator from './components/calculator/Calculator'
+// import Calculator from './components/calculator/Calculator'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
