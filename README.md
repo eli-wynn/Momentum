@@ -68,7 +68,6 @@ Head to the [Releases](../../releases) page and download the latest version for 
 |---|---|
 | Windows | `momentum-app_x.x.x_x64-setup.exe` |
 | macOS | `momentum-app_x.x.x_x64.dmg` |
-| Linux | `momentum-app_x.x.x_amd64.AppImage` |
 
 No installation required on Windows — just run the `.exe`.
 
