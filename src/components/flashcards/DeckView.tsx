@@ -1,14 +1,18 @@
 import { useState, useEffect } from 'react'
-import { useFlashcardStore } from '../../stores/flashcardStore'
+import { useFlashcardStore, Deck } from '../../stores/flashcardStore'
+
+
+
 
 type DeckViewProps = {
   deckId: number
   onBack: () => void
   onStudyFull: () => void
   onStudySpaced: () => void
+  onExport: (deck: Deck) => void
 }
 
-export default function DeckView({ deckId, onBack, onStudyFull, onStudySpaced }: DeckViewProps) {
+export default function DeckView({ deckId, onBack, onStudyFull, onStudySpaced, onExport }: DeckViewProps) {
   const { decks, loaded, loadCards, addCard, deleteCard } = useFlashcardStore()
   const [newFront, setNewFront] = useState('')
   const [newBack, setNewBack] = useState('')
@@ -103,6 +107,13 @@ export default function DeckView({ deckId, onBack, onStudyFull, onStudySpaced }:
           }}
         >
           Study Due Cards {dueCount > 0 && `(${dueCount})`}
+        </button>
+        <button 
+            onClick={() => onExport(selectedDeck)}
+            className="rounded-xl px-4 py-2.5 text-[13px] font-medium transition-all duration-150 active:scale-95 disabled:opacity-40"
+            style={{background: 'var(--accent)', color: 'var(--bg)'}}
+        >
+            Export ➤
         </button>
       </div>
 

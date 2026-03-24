@@ -4,6 +4,7 @@ import Tasks from './components/tasks/TaskList'
 import Notes from './components/notes/Notes'
 import Pomodoro from './components/pomodoro/Pomodoro'
 import Flashcards from './components/flashcards/Flashcards'
+import Calculator from './components/calculator/Calculator'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -80,6 +81,7 @@ export default function App() {
             <NavItem to="/notes" icon="✎" label="Notes" />
             <NavItem to="/pomodoro" icon="◎" label="Pomodoro" />
             <NavItem to="/flashcards" icon="🂡" label="Flashcards" />
+            {/* <NavItem to="/calculator" icon="∑" label="Calculator" /> */}
 
             <div className="mt-auto flex items-center gap-2 px-2 pb-1">
               <span className="text-[11px] whitespace-nowrap" style={{ color: 'var(--text-tertiary)' }}>
@@ -105,6 +107,7 @@ export default function App() {
               <Route path="/notes" element={<Notes />} />
               <Route path="/pomodoro" element={<Pomodoro />} />
               <Route path="/flashcards" element={<Flashcards />} />
+              {/* <Route path="/calculator" element={<Calculator />} /> */}
             </Routes>
           </main>
 
