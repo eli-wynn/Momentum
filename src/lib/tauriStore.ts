@@ -5,7 +5,7 @@ let store: Store | null = null
 
 async function getStore(): Promise<Store> {
   if (!store) {
-    store = await load('appdata.json', { autoSave: true })
+    store = await load('appdata.json', { defaults: {} }) 
   }
   return store
 }
@@ -21,6 +21,6 @@ export const db = {
   },
   delete: async (key: string): Promise<void> => {
     const s = await getStore()
-    return s.delete(key)
+    await s.delete(key) 
   },
 }
